@@ -1,10 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
 
+import { Label } from "ui/Label";
+
 const StyledSwitch = styled.div`
   display: flex;
   justify-content: center;
   background-color: #e3e3e3;
+  margin-top: 8px;
   padding: 8px;
   border-radius: 8px;
 
@@ -12,8 +15,8 @@ const StyledSwitch = styled.div`
     display: inline-flex;
     border-radius: 8px;
     flex: 1;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: var(--spacing-400);
+    padding-bottom: var(--spacing-400);
     border: none;
     outline: none;
     background-color: transparent;
@@ -22,11 +25,18 @@ const StyledSwitch = styled.div`
     font-size: 16px;
     font-weight: 600;
     line-height: 1;
-    color: #15135b;
+    color: var(--super-gray-500);
+    cursor: pointer;
+
+    transition: background-color 120ms, color 120ms ease-in-out;
+
+    :not(&.selected):hover {
+      background-color: var(--white-200);
+    }
 
     &.selected {
-      background-color: #e21383;
-      color: #ffffff;
+      background-color: var(--super-pink-500);
+      color: var(--white-100);
     }
   }
 `;
@@ -34,7 +44,7 @@ const StyledSwitch = styled.div`
 export const SwitchInput = ({label, options, selected, onChange}) => {
   return (
     <>
-      {label}
+      <Label>{label}</Label>
       <StyledSwitch>
       {options.map(option => {
         const isSelected = selected.value === option.value;

@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const Icon = ({icon}) => {
-  return <i class={`fa-solid fa-${icon}`}></i>;
+export const Icon = ({icon, className}) => {
+  return <i className={`fa-solid fa-${icon} ${className ? className : ''}`}></i>;
 }

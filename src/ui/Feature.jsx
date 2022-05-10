@@ -1,39 +1,31 @@
 import React from 'react';
 import styled from "styled-components";
 
+import { Icon } from "ui/Icon";
+import { Title } from "ui/Title";
+import { Paragraph } from "ui/Paragraph";
+
 const StyledFeature = styled.div`
-  h4 {
-    font-weight: 600;
-    font-family: var(--font-family-title);
-    font-size: 16px;
-    line-height: 1.25;
-
-    color: #15135b;
-  }
-
-  p {
-    font-weight: 400;
-    font-family: var(--font-family-body);
-    font-size: 16px;
-    line-height: 1.5;
-    color: #15135b;
-  }
+  color: var(--super-gray-800);
 `;
 
-export const Feature = ({title, description}) => {
+export const Feature = ({title, description, icon, className}) => {
   return (
-    <StyledFeature>
-      <h4>{title}</h4>
-      <p>{description}</p>
+    <StyledFeature className={`flex grid-cols-2 ${className ? className : ''}`}>
+      {icon && (<Icon icon={icon} className='flex-initial mt-0.5'/>)}
+      <div className='ml-2 mb-6'>
+        <Title level={3} left>{title}</Title>
+        <Paragraph className="mt-1">{description}</Paragraph>
+      </div>
     </StyledFeature>
   );
 }
 
 export const Features = styled.div`
   display: block;
-  padding: 16px;
-  background: #ffffff;
-  border: 2px solid #e3e3e3;
-  box-shadow: 0px 2px 2px #ebebeb;
+  padding: var(--spacing-600);
+  background-color: var(--white-100);
+  border: 2px solid var(--white-300);
+  box-shadow: 0px 2px 2px var(--white-200);
   border-radius: 12px;
 `;

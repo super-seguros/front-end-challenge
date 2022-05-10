@@ -11,23 +11,23 @@ const SyledInfoToken = styled.div`
     font-size: 16px;
     font-weight: 600;
     line-height: 1;
-    color: #15135b;
+    color: var(--super-gray-800);
     cursor: default;
   }
   p {
-    margin: 8px 0 0;
+    margin: var(--spacing-400) 0 0;
     font-family: var(--font-family-body);
     font-size: 20px;
     font-weight: 600;
     line-height: 1;
-    color: #e21383;
+    color: var(--super-pink-500);
     cursor: default;
   }
 `;
 
-export const InfoToken = ({label, value}) => {
+export const InfoToken = ({label, value, className}) => {
   return (
-    <SyledInfoToken>
+    <SyledInfoToken className={className}>
       <h4>{label}</h4>
       <p>{value}</p>
     </SyledInfoToken>
