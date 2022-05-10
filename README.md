@@ -28,7 +28,7 @@ Here's some technical decisions I made for this project:
 const regularInsurance = [
   {
     coverageAmount: 120000,
-    montlyPrice: 96.68,
+    monthlyPrice: 96.68,
     detailUrl: "",
     recommended: false,
   },
@@ -37,6 +37,5 @@ const regularInsurance = [
 - Used font awesome icons directly from the CDN, we assume users won't need to download it again if they already visited an app or website that uses the same icons
 - In a similar way, we load the Outfit typeface from Google Fonts from Google instead of our server
 
-Sorry for the delay on the response, I got an annoying flu this weekend. I went to get tested for covid and it looks like it's just regular flu, so no need to worry too much about it.
-
+Sorry for the delay in the response, I got an annoying flu this weekend. I went to get tested for covid and it looks like it's just regular flu, so no need to worry too much about it.
 

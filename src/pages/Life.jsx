@@ -15,19 +15,19 @@ import { Paragraph } from "ui/Paragraph";
 const regularInsurance = [
   {
     coverageAmount: 120000,
-    montlyPrice: 96.68,
+    monthlyPrice: 96.68,
     detailUrl: "",
     recommended: false,
   },
   {
     coverageAmount: 500000,
-    montlyPrice: 286.68,
+    monthlyPrice: 286.68,
     detailUrl: "",
     recommended: true,
   },
   {
     coverageAmount: 1500000,
-    montlyPrice: 612.99,
+    monthlyPrice: 612.99,
     detailUrl: "",
     recommended: false,
   },
@@ -36,19 +36,19 @@ const regularInsurance = [
 const cashbackInsurance = [
   {
     coverageAmount: 180000,
-    montlyPrice: 199.99,
+    monthlyPrice: 199.99,
     detailUrl: "",
     recommended: false,
   },
   {
     coverageAmount: 480000,
-    montlyPrice: 399.99,
+    monthlyPrice: 399.99,
     detailUrl: "",
     recommended: true,
   },
   {
     coverageAmount: 1200000,
-    montlyPrice: 999.99,
+    monthlyPrice: 999.99,
     detailUrl: "",
     recommended: false,
   },
@@ -101,7 +101,7 @@ const AppContent = styled.div`
 
 const MORE_INFO_URL = "https://app.super.mx/login";
 
-const InsuranceOption = ({ recommended, coverageAmount, montlyPrice }) => {
+const InsuranceOption = ({ recommended, coverageAmount, monthlyPrice }) => {
   return (
     <InsuranceBox className="mb-2">
       {recommended && <Tag className="mb-3">Recomendado</Tag>}
@@ -109,7 +109,7 @@ const InsuranceOption = ({ recommended, coverageAmount, montlyPrice }) => {
         <InfoToken label="Cobertura" value={formatMoney(coverageAmount)} />
         <InfoToken
           label="Precio desde"
-          value={`${formatMoney(montlyPrice)}/mes`}
+          value={`${formatMoney(monthlyPrice)}/mes`}
         />
       </div>
       <Button>
@@ -129,7 +129,7 @@ export const Life = () => {
       <InsuranceOption
         recommended={product.recommended}
         coverageAmount={product.coverageAmount}
-        montlyPrice={product.montlyPrice}
+        monthlyPrice={product.monthlyPrice}
       />
     )
   );
