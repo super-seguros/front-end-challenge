@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
-import { Icon } from 'ui/Icon'
+import { Icon } from "ui/Icon";
 
 const StyledTopbar = styled.div`
   display: flex;
@@ -54,9 +54,12 @@ const StyledTopbar = styled.div`
 export const Topbar = () => {
   return (
     <StyledTopbar>
-      <button><Icon icon="arrow-left" />Atras</button>
+      <button>
+        <Icon icon="arrow-left" />
+        Atras
+      </button>
       <p>Cotización</p>
       <button>Ayuda</button>
     </StyledTopbar>
   );
-}
+};

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
 const StyledTag = styled.button`
@@ -15,10 +15,6 @@ const StyledTag = styled.button`
   user-select: none;
 `;
 
-export const Tag = ({children, className}) => {
-  return (
-    <StyledTag className={className}>
-      {children}
-    </StyledTag>
-  );
-}
+export const Tag = ({ children, className }) => {
+  return <StyledTag className={className}>{children}</StyledTag>;
+};

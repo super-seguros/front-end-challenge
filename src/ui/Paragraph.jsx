@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
 const StyledParagraph = styled.p`
@@ -16,6 +16,12 @@ const StyledParagraph = styled.p`
   }
 `;
 
-export const Paragraph = ({children, center, className}) => {
-  return <StyledParagraph className={`${center ? 'center' : ''} ${className ? className : ''}`}>{children}</StyledParagraph>
-}
+export const Paragraph = ({ children, center, className }) => {
+  return (
+    <StyledParagraph
+      className={`${center ? "center" : ""} ${className ? className : ""}`}
+    >
+      {children}
+    </StyledParagraph>
+  );
+};
