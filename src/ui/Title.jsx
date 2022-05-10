@@ -36,5 +36,5 @@ const StyledTitle = styled.h1`
 `;
 
 export const Title = ({children, level = '1', left, pink, className}) => {
-  return <StyledTitle as={`h${level}`} className={`${left ? 'left' : ''} ${pink ? 'pink' : ''} ${className ? className : ''}`}>{children}</StyledTitle>
+  return <StyledTitle as={`h${level}`} className={`${left ? 'left' : ''} ${className ? className : ''} ${pink ? 'pink' : ''}`}>{children}</StyledTitle>
 }

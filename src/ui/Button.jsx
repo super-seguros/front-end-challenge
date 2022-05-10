@@ -28,9 +28,9 @@ const StyledButton = styled.button`
   }
 `;
 
-export const Button = ({children, className}) => {
+export const Button = ({children, className, onClick}) => {
   return (
-    <StyledButton className={className}>
+    <StyledButton className={className} onClick={onClick}>
       {children}
     </StyledButton>
   );
