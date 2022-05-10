@@ -41,9 +41,9 @@ const StyledSwitch = styled.div`
   }
 `;
 
-export const SwitchInput = ({label, options, selected, onChange}) => {
+export const SwitchInput = ({label, options, selected, onChange, className}) => {
   return (
-    <>
+    <div className={className}>
       <Label>{label}</Label>
       <StyledSwitch>
       {options.map(option => {
@@ -51,6 +51,6 @@ export const SwitchInput = ({label, options, selected, onChange}) => {
         return <button className={`${isSelected ? 'selected' : ''}`}onClick={() => onChange(option)}>{option.label}</button>
       })}
       </StyledSwitch>
-    </>
+    </div>
   )
 }
