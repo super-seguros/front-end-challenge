@@ -3,9 +3,12 @@ import styled from "styled-components";
 
 import { Icon } from "ui/Icon";
 
+const HELP_URL =
+  "https://wa.me/525585250354?text=%C2%A1Hola%21+Estoy+en+la+p%C3%A1gina+de+S%C3%BAper+y+tengo+una+pregunta.";
+const MAIN_SITE_URL = "https://super.mx/";
+
 const StyledTopbar = styled.div`
   display: flex;
-  margin: 0;
   align-items: center;
   justify-content: space-between;
   background-color: var(--white-100);
@@ -34,7 +37,7 @@ const StyledTopbar = styled.div`
     cursor: pointer;
 
     &:hover {
-      background-color: var(--white-300);
+      background-color: var(--white-200);
     }
 
     &:first-child {
@@ -51,15 +54,21 @@ const StyledTopbar = styled.div`
   }
 `;
 
-export const Topbar = () => {
+export const Topbar = ({ className }) => {
   return (
-    <StyledTopbar>
+    <StyledTopbar className={className}>
       <button>
-        <Icon icon="arrow-left" />
-        Atras
+        <a href={MAIN_SITE_URL}>
+          <Icon icon="arrow-left" />
+          Atras
+        </a>
       </button>
       <p>Cotización</p>
-      <button>Ayuda</button>
+      <button>
+        <a href={HELP_URL} target="_blank">
+          Ayuda
+        </a>
+      </button>
     </StyledTopbar>
   );
 };

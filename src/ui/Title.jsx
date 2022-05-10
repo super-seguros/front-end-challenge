@@ -17,7 +17,6 @@ const lineHeight = {
 const StyledTitle = styled.h1`
   display: block;
   width: 100%;
-  margin: 0;
   font-family: var(--font-family-title);
   font-size: ${(props) => fontSize[props.as]};
   line-height: ${(props) => lineHeight[props.as]};

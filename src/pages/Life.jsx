@@ -8,11 +8,9 @@ import { Title } from "ui/Title";
 import { Feature, Features } from "ui/Feature";
 import { SwitchInput } from "ui/SwitchInput";
 import { Button } from "ui/Button";
+import { Divider } from "ui/Divider";
 import { Tag } from "ui/Tag";
 import { Paragraph } from "ui/Paragraph";
-
-const HELP_URL =
-  "https://wa.me/525585250354?text=%C2%A1Hola%21+Estoy+en+la+p%C3%A1gina+de+S%C3%BAper+y+tengo+una+pregunta.";
 
 const regularInsurance = [
   {
@@ -35,6 +33,27 @@ const regularInsurance = [
   },
 ];
 
+const cashbackInsurance = [
+  {
+    coverageAmount: 180000,
+    montlyPrice: 199.99,
+    detailUrl: "",
+    recommended: false,
+  },
+  {
+    coverageAmount: 480000,
+    montlyPrice: 399.99,
+    detailUrl: "",
+    recommended: true,
+  },
+  {
+    coverageAmount: 1200000,
+    montlyPrice: 999.99,
+    detailUrl: "",
+    recommended: false,
+  },
+];
+
 const insuranceTypes = [
   {
     value: "regular",
@@ -45,6 +64,11 @@ const insuranceTypes = [
     label: "Con devolución",
   },
 ];
+
+const insuranceOfferings = {
+  regular: regularInsurance,
+  cashback: cashbackInsurance,
+};
 
 const InsuranceBox = styled.div`
   display: block;
@@ -59,44 +83,56 @@ const InsuranceBox = styled.div`
 const AppContent = styled.div`
   display: block;
   padding: var(--spacing-500);
-  margin: 0 auto;
   max-width: 375px;
   background-color: var(--white-100);
   border: 2px solid var(--white-300);
   box-shadow: 0px 2px 2px var(--white-200);
   border-radius: 12px;
+  margin: var(--spacing-700) auto;
 
   @media (max-width: 600px) {
     max-width: 100%;
     background-color: var(--super-blue-50);
     border: none;
     box-shadow: none;
+    margin-top: 0;
   }
 `;
+
+const MORE_INFO_URL = "https://app.super.mx/login";
+
+const InsuranceOption = ({ recommended, coverageAmount, montlyPrice }) => {
+  return (
+    <InsuranceBox className="mb-2">
+      {recommended && <Tag className="mb-3">Recomendado</Tag>}
+      <div className="grid grid-cols-2 mb-4">
+        <InfoToken label="Cobertura" value={formatMoney(coverageAmount)} />
+        <InfoToken
+          label="Precio desde"
+          value={`${formatMoney(montlyPrice)}/mes`}
+        />
+      </div>
+      <Button>
+        <a target={MORE_INFO_URL}>Más información</a>
+      </Button>
+    </InsuranceBox>
+  );
+};
 
 export const Life = () => {
   const [insuranceType, setInsuranceType] = useState(
     insuranceTypes.find((type) => type.value === "regular")
   );
 
-  const regularInsuranceOptions = regularInsurance.map((insurance) => (
-    <InsuranceBox className="mb-2">
-      {insurance.recommended && <Tag className="mb-3">Recomendado</Tag>}
-      <div className="grid grid-cols-2 mb-4">
-        <InfoToken
-          label="Cobertura"
-          value={formatMoney(insurance.coverageAmount)}
-        />
-        <InfoToken
-          label="Precio desde"
-          value={`${formatMoney(insurance.montlyPrice)}/mes`}
-        />
-      </div>
-      <Button onClick={() => console.log("show more info")}>
-        Más información
-      </Button>
-    </InsuranceBox>
-  ));
+  const offeringList = insuranceOfferings[insuranceType.value].map(
+    (product) => (
+      <InsuranceOption
+        recommended={product.recommended}
+        coverageAmount={product.coverageAmount}
+        montlyPrice={product.montlyPrice}
+      />
+    )
+  );
 
   return (
     <>
@@ -113,13 +149,19 @@ export const Life = () => {
           className="mt-7"
         />
         <Title level={3} left pink className="pt-7">
-          Plan tradicional
+          Plan {insuranceType.label.toLocaleLowerCase()}
         </Title>
         <Title level={2} left className="pb-3">
           Se renueva cada año.
-          <br /> Más barato pero no tiene ahorro.
+          {insuranceType.value === "regular" && (
+            <>
+              <br />
+              Más barato pero no tiene ahorro.
+            </>
+          )}
         </Title>
-        {regularInsuranceOptions}
+        {offeringList}
+        <Divider className="mt-6 mb-2" />
         <Paragraph center className="pt-4 pb-1">
           Seguro expedido por General de Seguros y protegido por la CNSF.
         </Paragraph>
