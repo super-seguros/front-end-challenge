@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
 import { Label } from "ui/Label";
@@ -41,16 +41,29 @@ const StyledSwitch = styled.div`
   }
 `;
 
-export const SwitchInput = ({label, options, selected, onChange, className}) => {
+export const SwitchInput = ({
+  label,
+  options,
+  selected,
+  onChange,
+  className,
+}) => {
   return (
     <div className={className}>
       <Label>{label}</Label>
       <StyledSwitch>
-      {options.map(option => {
-        const isSelected = selected.value === option.value;
-        return <button className={`${isSelected ? 'selected' : ''}`}onClick={() => onChange(option)}>{option.label}</button>
-      })}
+        {options.map((option) => {
+          const isSelected = selected.value === option.value;
+          return (
+            <button
+              className={`${isSelected ? "selected" : ""}`}
+              onClick={() => onChange(option)}
+            >
+              {option.label}
+            </button>
+          );
+        })}
       </StyledSwitch>
     </div>
-  )
-}
+  );
+};

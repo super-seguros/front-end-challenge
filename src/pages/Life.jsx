@@ -74,7 +74,6 @@ const AppContent = styled.div`
   }
 `;
 
-
 export const Life = () => {
   const [insuranceType, setInsuranceType] = useState(
     insuranceTypes.find((type) => type.value === "regular")
@@ -93,15 +92,19 @@ export const Life = () => {
           value={`${formatMoney(insurance.montlyPrice)}/mes`}
         />
       </div>
-      <Button onClick={() => console.log('show more info')}>Más información</Button>
+      <Button onClick={() => console.log("show more info")}>
+        Más información
+      </Button>
     </InsuranceBox>
-  ))
+  ));
 
   return (
     <>
       <Topbar pageTitle="Cotización" />
       <AppContent>
-        <Title className="pt-3">Estos son los increíbles precios que tenemos para ti:</Title>
+        <Title className="pt-3">
+          Estos son los increíbles precios que tenemos para ti:
+        </Title>
         <SwitchInput
           label="Elige tu tipo de seguro"
           options={insuranceTypes}
@@ -114,13 +117,15 @@ export const Life = () => {
         </Title>
         <Title level={2} left className="pb-3">
           Se renueva cada año.
-          <br />          Más barato pero no tiene ahorro.
+          <br /> Más barato pero no tiene ahorro.
         </Title>
-          {regularInsuranceOptions}
+        {regularInsuranceOptions}
         <Paragraph center className="pt-4 pb-1">
           Seguro expedido por General de Seguros y protegido por la CNSF.
         </Paragraph>
-        <Title level={2} className="pt-3 pb-3">Todos nuestros planes incluyen:</Title>
+        <Title level={2} className="pt-3 pb-3">
+          Todos nuestros planes incluyen:
+        </Title>
         <Features>
           <Feature
             icon="check-circle"

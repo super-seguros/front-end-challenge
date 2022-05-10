@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
 const SyledInfoToken = styled.div`
@@ -25,11 +25,11 @@ const SyledInfoToken = styled.div`
   }
 `;
 
-export const InfoToken = ({label, value, className}) => {
+export const InfoToken = ({ label, value, className }) => {
   return (
     <SyledInfoToken className={className}>
       <h4>{label}</h4>
       <p>{value}</p>
     </SyledInfoToken>
   );
-}
+};

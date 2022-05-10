@@ -1,7 +1,5 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-
-import { Icon } from 'ui/Icon'
 
 const StyledLabel = styled.div`
   font-family: var(--font-family-body);
@@ -13,10 +11,6 @@ const StyledLabel = styled.div`
   user-select: none;
 `;
 
-export const Label = ({children, className}) => {
-  return (
-    <StyledLabel className={className}>
-        {children}
-    </StyledLabel>
-  );
-}
+export const Label = ({ children, className }) => {
+  return <StyledLabel className={className}>{children}</StyledLabel>;
+};
