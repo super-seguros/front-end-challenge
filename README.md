@@ -13,6 +13,8 @@ npm start
 
 Hi Stephen,
 
+I've invited you to the GitHub project using this GitHub account I found on the web @quigebo, I'm sending it this way so I don't have to make the repository public for anyone else to see (and sending zips in gmail is usually a nope!).
+
 Here's some technical decisions I made for this project:
 - Used a mix of styled-components for CSS and tailwind, custom UI components are inside `src/ui` and we override some styles, mainly around spacing between elements using tailwind
 - The UI components created here are basic versions of how some of these components should look/behave, I think with more time we can allocate more effort into making sure everything has the proper accessibility and HTML tags required to give everyone the best experience
