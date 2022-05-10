@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* fonts */
+  --font-family-title: "Outfit";
+  --font-family-body: "Outfit";
+
+  /* colors */
+  --super-gray-800: #15135b;
+  --super-gray-300: #e3e3e3;
+  --super-pink-500: #e21383;
+  --super-pink-700: #b80665;
+  --super-green-500: #5fb04e;
+  --super-blue-50: #f9fafb;
+  --white-100: #ffffff;
+  --white-200: #ebebeb;
+  --white-300: #e3e3e3;
+
+  /* spacing */
+  --spacing-100: 1px;
+  --spacing-200: 2px;
+  --spacing-300: 4px;
+  --spacing-400: 8px;
+  --spacing-500: 12px;
+  --spacing-600: 16px;
+  --spacing-700: 20px;
+  --spacing-800: 24px;
+
+  background-color: var(--super-blue-50);
+}
+
+html,
+body {
+  background-color: var(--super-blue-50);
+}
