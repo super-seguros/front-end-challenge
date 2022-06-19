@@ -1,0 +1,15 @@
+{
+  "name": "super-seguros-challenge",
+  "version": "1.0.0",
+  "description": "Súper Seguros frontend challenge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michalksiezuk/super-seguros-challenge.git"
+  },
+  "author": "Michał Księżuk <michal@ksiezuk.pl>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michalksiezuk/super-seguros-challenge/issues"
+  },
+  "homepage": "https://github.com/michalksiezuk/super-seguros-challenge#readme"
+}
