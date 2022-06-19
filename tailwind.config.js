@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./src/**/*.{html,js}",
@@ -16,6 +17,9 @@ module.exports = {
         "super-grey-dark": "#636c94",
         "super-green-light": "#6ecd95",
       },
+      fontFamily: {
+        "sans": ["Lato", ...defaultTheme.fontFamily.sans]
+      }
     },
   },
   plugins: [

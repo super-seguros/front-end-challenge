@@ -1,3 +1,80 @@
-@import "_tailwind.css";
-@import "_typography.css";
-@import "_buttons.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .super-radio {
+    @apply
+    appearance-none
+    w-3 h-3
+    rounded-full
+    ring ring-2 ring-offset-2 ring-super-grey-light
+    checked:bg-super-blue-light
+    transition-colors duration-300
+    cursor-pointer;
+  }
+
+  .super-label {
+    @apply
+    flex items-center
+    p-3
+    text-lg text-super-blue-darker font-bold
+    cursor-pointer;
+  }
+
+  .super-submit-button {
+    @apply
+    flex items-center justify-center
+    w-full
+    py-3
+    rounded-full
+    text-white text-lg font-bold
+    bg-super-pink-light hover:bg-super-pink-dark
+    transition-colors duration-300;
+  }
+
+  .super-accordion-button {
+    @apply
+    accordion-button
+    flex items-center
+    w-full
+    rounded-none
+    text-left font-bold
+    bg-white
+    border-0
+    transition duration-300;
+  }
+
+  .super-accordion-button:after,
+  .super-accordion-button:not(.collapsed):after {
+    background-image: url("../assets/chevron-down.svg");
+    background-size: 0.9rem;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .super-accordion-button:not(.collapsed) {
+    color: inherit;
+    box-shadow: none;
+  }
+}
+
+@layer components {
+  .super-accordion-item {
+    @apply
+    accordion-item
+    py-4 px-3
+    border-0 border-b border-gray-200
+    rounded-none;
+  }
+
+  .super-accordion-item:last-of-type {
+    border-radius: 0;
+  }
+}
+
+@layer utilities {
+  .line-height-125 {
+    line-height: 1.25rem;
+  }
+}
