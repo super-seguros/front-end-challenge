@@ -23,7 +23,24 @@
 </nav>
 
 <main>
-  <section class="container mx-auto px-2 mb-5 mt-4">
+  <div class="container mx-auto px-3 py-4 flex items-center justify-between">
+    <button>
+      <img src="assets/back-arrow-icon.svg" alt=""/>
+    </button>
+    <div class="flex items-center justify-center w-36">
+      <div class="w-14 text-super-blue-darker font-bold">
+        <span>3</span><span class="text-super-grey-dark"> / 3</span>
+      </div>
+      <div class="w-full bg-super-grey-light h-1 rounded-full">
+        <div class="bg-super-green-light h-1 rounded-full" style="width: calc((100% / 3) * 2)"></div>
+      </div>
+    </div>
+    <button class="disabled invisible">
+      <img src="assets/back-arrow-icon.svg" alt="" class="rotate-180"/>
+    </button>
+  </div>
+
+  <section class="container mx-auto px-2 mb-5">
     <h2 class="text-2xl font-black text-center text-super-blue-darker mb-4">Tu cotización</h2>
     <div class="border border-super-pink-dark rounded-lg py-5 px-12 text-center">
       <div class="text-super-pink-light text-lg font-bold mb-1">Seguro con devolución</div>

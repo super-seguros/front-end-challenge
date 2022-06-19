@@ -14,6 +14,7 @@ module.exports = {
         "super-pink-dark": "#ee0a81",
         "super-grey-light": "#e3e5ec",
         "super-grey-dark": "#636c94",
+        "super-green-light": "#6ecd95",
       },
     },
   },
