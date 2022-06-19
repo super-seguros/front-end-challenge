@@ -12,6 +12,7 @@ module.exports = {
         "super-blue-darker": "#080d3a",
         "super-pink-light": "#ef5dac",
         "super-pink-dark": "#ee0a81",
+        "super-grey-light": "#e3e5ec",
         "super-grey-dark": "#636c94",
       },
     },

@@ -23,7 +23,7 @@
 </nav>
 
 <main>
-  <section class="container mx-auto px-2">
+  <section class="container mx-auto px-2 mb-5">
     <h2 class="text-2xl font-black text-center text-super-blue-darker mb-4">Tu cotización</h2>
     <div class="border border-super-pink-dark rounded-lg py-5 px-12 text-center">
       <div class="text-super-pink-light text-lg font-bold mb-1">Seguro con devolución</div>
@@ -35,6 +35,54 @@
       <div class="text-super-grey-dark">O te devolvemos hasta <span class="text-super-blue-light">$16,150.99</span>
       </div>
     </div>
+  </section>
+
+  <section class="container mx-auto px-2 pb-6 border border-t-0 border-l-0 border-r-0">
+    <h3 class="font-bold text-center text-super-blue-darker mb-5">
+      ¿Por cuánto tiempo quieres pagar?
+    </h3>
+    <form>
+      <div class="border border-super-grey-light rounded-lg mb-3">
+        <label class="flex items-center w-full text-lg text-super-blue-darker font-bold p-3 cursor-pointer">
+          <input
+            type="radio"
+            name="period"
+            class="mr-4 cursor-pointer appearance-none w-3 h-3 ring ring-2 rounded-full
+                  ring-super-grey-light ring-offset-2 checked:bg-super-blue-light transition-colors duration-300"
+          >
+          <span>Mensual</span><span class="ml-auto text-super-blue-light"> $150 pesos</span>
+        </label>
+      </div>
+      <div class="border border-super-grey-light rounded-lg mb-3">
+        <label class="flex items-center text-lg text-super-blue-darker font-bold p-3 cursor-pointer">
+          <input
+            type="radio"
+            name="period"
+            class="mr-4 cursor-pointer appearance-none w-3 h-3 ring ring-2 rounded-full
+                  ring-super-grey-light ring-offset-2 checked:bg-super-blue-light transition-colors duration-300"
+          >
+          <span>Semestral</span><span class="ml-auto text-super-blue-light"> $900 pesos</span>
+        </label>
+      </div>
+      <div class="border border-super-grey-light rounded-lg mb-4">
+        <label class="flex items-center text-lg text-super-blue-darker font-bold p-3 cursor-pointer">
+          <input
+            type="radio"
+            name="period"
+            class="mr-4 cursor-pointer appearance-none w-3 h-3 ring ring-2 rounded-full
+                  ring-super-grey-light ring-offset-2 checked:bg-super-blue-light transition-colors duration-300"
+          >
+          <span>Anual</span><span class="ml-auto text-super-blue-light"> $1,800 pesos</span>
+        </label>
+      </div>
+      <button
+        type="submit"
+        class="flex items-center justify-center w-full rounded-full bg-super-pink-light hover:bg-super-pink-dark
+              transition-colors duration-300 text-white text-lg font-bold py-3"
+      >
+        Contratar <img src="assets/right-arrow-icon.svg" class="ml-2" alt=""/>
+      </button>
+    </form>
   </section>
 
   <section class="container mx-auto mt-4">
