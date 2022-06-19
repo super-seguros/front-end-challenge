@@ -35,5 +35,8 @@
     "> 0.5%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "tw-elements": "^1.0.0-alpha12"
+  }
 }
