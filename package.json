@@ -2,6 +2,16 @@
   "name": "super-seguros-challenge",
   "version": "1.0.0",
   "description": "Súper Seguros frontend challenge",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "npm run parcel:dev",
+    "build": "run-s clean parcel:build",
+    "prod": "run-s clean build serve",
+    "serve": "serve -s -p 3002 dist",
+    "clean": "rimraf dist",
+    "parcel:dev": "parcel -p 3001 --open",
+    "parcel:build": "parcel build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/michalksiezuk/super-seguros-challenge.git"
