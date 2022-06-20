@@ -1,29 +1,29 @@
-# Front End Challenge
-Welcome to our challenge for the Front End Developer position.
+# Frontend challenge
 
-The challenge is super simple but would help us to understand the way you work.
+This repository hosts Súper Seguros frontend challenge solution.
 
-At Super we believe in as humans we have different opinions and ways to tackle down problems. So on this challenge doesn’t exist a “correct” answer.
+## Tech stack
 
-## Instructions:
-- Read the task to do.
-- Explore the Figma File to inspect the design or just see the example image on /assets folder.
-- Once you have the design ready please make a PR with the solution.
+- pure HTML template, no frameworks or extra libraries
+- [Tailwind CSS](https://tailwindcss.com/) + [Tailwind Elements](https://tailwind-elements.com/)
+- [Parcel](https://parceljs.org/) as development server and production bundler
+- [Serve](https://github.com/vercel/serve) as production build static server
 
+## Running this project
 
-## The Job
-Take a design made by our lead designer and try to translate it into a functional version with HTML, CSS or/and JS.
+```shell
+# Install dependencies
+npm i
 
-## Considerations/Requirements:
+# Run development server
+npm start
 
-- The page needs to follow a mobile-first approach.
-- When the user taps/clicks a payment frequency option label/name this needs to be selected. (Not only if I click the radio input)
-- You can use whatever CSS/HTML Architecture or Framework.
-- Use any sans-serif font.
+# Create production build and run static server
+npm run prod
+```
 
-## Extra Points:
-- If you use Tailwind CSS.
-- If you made a Desktop version.
+## Notes
 
-## Resources:
-FIGMA File: https://www.figma.com/file/felFkklDJqKSCoKaqHM7N8/Screen-for-challenge?node-id=0%3A1
+React, Vue, Svelte or any other framework, UI library or template engine could be used to solve this challenge.
+Using any of those seemed like an overkill so decision was made to go with pure HTML.
+Final solution is less than 300 lines of HTML code.
