@@ -15,280 +15,285 @@
     <a href="/">
       <img src="assets/logo.svg" alt="Súper Seguros"/>
     </a>
-    <h1 class="font-black text-super-blue-darker">Seguro de Vida</h1>
+    <h1 class="font-black text-super-blue-darker lg:text-xl">Seguro de Vida</h1>
     <button class="w-6 h-6 flex items-center justify-center">
       <img src="assets/menu-icon.svg" alt="Menu"/>
     </button>
   </div>
 </nav>
 
-<main class="mb-12">
-  <div class="container mx-auto px-3 py-4 flex items-center justify-between">
+<main class="mb-12 lg:mb-16">
+  <div class="container mx-auto px-3 py-4 lg:py-6 flex items-center justify-between">
     <button>
-      <img src="assets/back-arrow-icon.svg" alt=""/>
+      <img src="assets/back-arrow-icon.svg" alt="" class="lg:w-4 lg:h-4"/>
     </button>
-    <div class="flex items-center justify-center w-36">
-      <div class="w-14 text-super-blue-darker font-bold">
+    <div class="flex items-center justify-center w-36 lg:w-48">
+      <div class="w-14 text-super-blue-darker lg:text-lg font-bold">
         <span>3</span><span class="text-super-grey-dark"> / 3</span>
       </div>
-      <div class="w-full bg-super-grey-light h-1 rounded-full">
-        <div class="bg-super-green-light h-1 rounded-full" style="width: calc((100% / 3) * 2)"></div>
+      <div class="w-full bg-super-grey-light h-1 lg:h-2 rounded-full">
+        <div class="bg-super-green-light h-1 lg:h-2 rounded-full" style="width: calc((100% / 3) * 2)"></div>
       </div>
     </div>
     <button class="disabled invisible">
-      <img src="assets/back-arrow-icon.svg" alt="" class="rotate-180"/>
+      <img src="assets/back-arrow-icon.svg" alt="" class="rotate-180 lg:w-4 lg:h-4"/>
     </button>
   </div>
 
-  <section class="container mx-auto px-2 mb-5">
-    <h2 class="text-2xl font-black text-center text-super-blue-darker mb-4">Tu cotización</h2>
+  <section class="container mx-auto px-2 mb-5 lg:mb-6">
+    <h2 class="text-center text-super-blue-darker text-2xl lg:text-3xl font-black mb-4 lg:mb-5">Tu cotización</h2>
     <div class="border border-super-pink-dark rounded-lg py-5 px-12 text-center">
-      <div class="text-super-pink-light text-lg font-bold mb-1">Seguro con devolución</div>
-      <div class="text-super-blue-darker text-lg font-bold line-height-125 mb-4">
+      <div class="text-super-pink-light text-lg lg:text-2xl font-bold mb-1">Seguro con devolución</div>
+      <div class="text-super-blue-darker text-lg lg:text-2xl font-bold line-height-125 mb-4 lg:mb-5">
         Un seguro que te devuelve tu dinero despues de <span class="text-super-blue-light">5 años.</span>
       </div>
-      <div class="text-super-grey-dark mb-3">En caso de fallecer pagamos</div>
-      <div class="text-super-blue-light text-5xl font-bold mb-3">$500,000</div>
-      <div class="text-super-grey-dark">O te devolvemos hasta <span class="text-super-blue-light">$16,150.99</span>
+      <div class="text-super-grey-dark lg:text-lg mb-3 lg:mb-4">En caso de fallecer pagamos</div>
+      <div class="text-super-blue-light text-5xl lg:text-7xl font-bold mb-3 lg:mb-4">$500,000</div>
+      <div class="text-super-grey-dark lg:text-lg">
+        O te devolvemos hasta <span class="text-super-blue-light">$16,150.99</span>
       </div>
     </div>
   </section>
 
-  <section class="container mx-auto px-2 pb-6 border-b">
-    <h3 class="font-bold text-center text-super-blue-darker mb-5">
+  <section class="container mx-auto px-2 pb-6 lg:pb-8 border-b">
+    <h3 class="text-center text-super-blue-darker lg:text-lg font-bold mb-5 lg:mb-6">
       ¿Por cuánto tiempo quieres pagar?
     </h3>
     <form>
-      <div class="border border-super-grey-light rounded-lg mb-3">
-        <label class="super-label">
-          <input type="radio" name="period" class="super-radio mr-4">
-          <span>Mensual</span><span class="ml-auto text-super-blue-light"> $150 pesos</span>
-        </label>
+      <div class="lg:grid lg:grid-cols-3 lg:gap-8 lg:mb-6">
+        <div class="border border-super-grey-light rounded-lg mb-3 lg:mb-0">
+          <label class="super-label">
+            <input type="radio" name="period" class="super-radio mr-4">
+            <span>Mensual</span><span class="ml-auto text-super-blue-light"> $150 pesos</span>
+          </label>
+        </div>
+        <div class="border border-super-grey-light rounded-lg mb-3 lg:mb-0">
+          <label class="super-label">
+            <input type="radio" name="period" class="super-radio mr-4">
+            <span>Semestral</span><span class="ml-auto text-super-blue-light"> $900 pesos</span>
+          </label>
+        </div>
+        <div class="border border-super-grey-light rounded-lg mb-4 lg:mb-0">
+          <label class="super-label">
+            <input type="radio" name="period" class="super-radio mr-4">
+            <span>Anual</span><span class="ml-auto text-super-blue-light"> $1,800 pesos</span>
+          </label>
+        </div>
       </div>
-      <div class="border border-super-grey-light rounded-lg mb-3">
-        <label class="super-label">
-          <input type="radio" name="period" class="super-radio mr-4">
-          <span>Semestral</span><span class="ml-auto text-super-blue-light"> $900 pesos</span>
-        </label>
-      </div>
-      <div class="border border-super-grey-light rounded-lg mb-4">
-        <label class="super-label">
-          <input type="radio" name="period" class="super-radio mr-4">
-          <span>Anual</span><span class="ml-auto text-super-blue-light"> $1,800 pesos</span>
-        </label>
-      </div>
-      <button type="submit" class="super-submit-button">
+      <button type="submit" class="super-submit-button lg:max-w-xl lg:mx-auto">
         Contratar <img src="assets/right-arrow-icon.svg" class="ml-2" alt=""/>
       </button>
     </form>
   </section>
 
-  <section class="container mx-auto mt-4">
-    <h3 class="w-full mb-2 text-center font-bold text-super-blue-darker">
-      <img src="assets/check-icon.svg" class="mx-auto mb-1" alt=""/>
-      ¿Qué cubre este seguro?
-    </h3>
-    <div class="accordion accordion-flush" id="accordion-included">
-      <div class="super-accordion-item">
-        <div class="accordion-header" id="accordion-included-heading1">
+  <div class="container mx-auto lg:grid lg:grid-cols-2 lg:gap-12">
+    <section class="container mx-auto mt-4 lg:mt-8">
+      <h3 class="w-full mb-2 lg:mb-3 text-center text-super-blue-darker lg:text-lg font-bold">
+        <img src="assets/check-icon.svg" class="mx-auto mb-1 lg:w-8 lg:h-8" alt=""/>
+        ¿Qué cubre este seguro?
+      </h3>
+      <div class="accordion accordion-flush" id="accordion-included">
+        <div class="super-accordion-item">
+          <div class="accordion-header" id="accordion-included-heading1">
+            <div
+              class="super-accordion-button collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#accordion-included-collapse1"
+              aria-expanded="false"
+              aria-controls="accordion-included-collapse1"
+            >
+              <h4 class="w-full flex justify-between cursor-pointer text-super-blue-dark">
+                <span>Muerte por enfermedad</span><span class="pr-3 text-super-blue-light"> $500,000</span>
+              </h4>
+            </div>
+          </div>
           <div
-            class="super-accordion-button collapsed"
-            data-bs-toggle="collapse"
-            data-bs-target="#accordion-included-collapse1"
-            aria-expanded="false"
-            aria-controls="accordion-included-collapse1"
+            id="accordion-included-collapse1"
+            class="accordion-collapse collapse"
+            aria-labelledby="accordion-included-heading1"
+            data-bs-parent="#accordion-included"
           >
-            <h4 class="w-full flex justify-between cursor-pointer text-super-blue-dark">
-              <span>Muerte por enfermedad</span><span class="pr-3 text-super-blue-light"> $500,000</span>
-            </h4>
+            <div class="accordion-body pt-2 text-super-grey-dark">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Alias aperiam consequuntur culpa doloremque eum fugit hic,
+              ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
+            </div>
           </div>
         </div>
-        <div
-          id="accordion-included-collapse1"
-          class="accordion-collapse collapse"
-          aria-labelledby="accordion-included-heading1"
-          data-bs-parent="#accordion-included"
-        >
-          <div class="accordion-body pt-2 text-super-grey-dark">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Alias aperiam consequuntur culpa doloremque eum fugit hic,
-            ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
-          </div>
-        </div>
-      </div>
 
-      <div class="super-accordion-item">
-        <div class="accordion-header" id="accordion-included-heading2">
+        <div class="super-accordion-item">
+          <div class="accordion-header" id="accordion-included-heading2">
+            <div
+              class="super-accordion-button collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#accordion-included-collapse2"
+              aria-expanded="false"
+              aria-controls="accordion-included-collapse2"
+            >
+              <h4 class="w-full flex justify-between cursor-pointer text-super-blue-dark">
+                <span>Muerte accidental</span><span class="pr-3 text-super-blue-light"> $500,000</span>
+              </h4>
+            </div>
+          </div>
           <div
-            class="super-accordion-button collapsed"
-            data-bs-toggle="collapse"
-            data-bs-target="#accordion-included-collapse2"
-            aria-expanded="false"
-            aria-controls="accordion-included-collapse2"
+            id="accordion-included-collapse2"
+            class="accordion-collapse collapse"
+            aria-labelledby="accordion-included-heading2"
+            data-bs-parent="#accordion-included"
           >
-            <h4 class="w-full flex justify-between cursor-pointer text-super-blue-dark">
-              <span>Muerte accidental</span><span class="pr-3 text-super-blue-light"> $500,000</span>
-            </h4>
+            <div class="accordion-body pt-2 text-super-grey-dark">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Alias aperiam consequuntur culpa doloremque eum fugit hic,
+              ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
+            </div>
           </div>
         </div>
-        <div
-          id="accordion-included-collapse2"
-          class="accordion-collapse collapse"
-          aria-labelledby="accordion-included-heading2"
-          data-bs-parent="#accordion-included"
-        >
-          <div class="accordion-body pt-2 text-super-grey-dark">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Alias aperiam consequuntur culpa doloremque eum fugit hic,
-            ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
-          </div>
-        </div>
-      </div>
 
-      <div class="super-accordion-item">
-        <div class="accordion-header" id="accordion-included-heading3">
+        <div class="super-accordion-item">
+          <div class="accordion-header" id="accordion-included-heading3">
+            <div
+              class="super-accordion-button collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#accordion-included-collapse3"
+              aria-expanded="false"
+              aria-controls="accordion-included-collapse3"
+            >
+              <h4 class="w-full flex justify-between cursor-pointer text-super-blue-dark">
+                <span>Enfermedad terminal</span><span class="pr-3 text-super-blue-light"> 30%</span>
+              </h4>
+            </div>
+          </div>
           <div
-            class="super-accordion-button collapsed"
-            data-bs-toggle="collapse"
-            data-bs-target="#accordion-included-collapse3"
-            aria-expanded="false"
-            aria-controls="accordion-included-collapse3"
+            id="accordion-included-collapse3"
+            class="accordion-collapse collapse"
+            aria-labelledby="accordion-included-heading3"
+            data-bs-parent="#accordion-included"
           >
-            <h4 class="w-full flex justify-between cursor-pointer text-super-blue-dark">
-              <span>Enfermedad terminal</span><span class="pr-3 text-super-blue-light"> 30%</span>
-            </h4>
+            <div class="accordion-body pt-2 text-super-grey-dark">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Alias aperiam consequuntur culpa doloremque eum fugit hic,
+              ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
+            </div>
           </div>
         </div>
-        <div
-          id="accordion-included-collapse3"
-          class="accordion-collapse collapse"
-          aria-labelledby="accordion-included-heading3"
-          data-bs-parent="#accordion-included"
-        >
-          <div class="accordion-body pt-2 text-super-grey-dark">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Alias aperiam consequuntur culpa doloremque eum fugit hic,
-            ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
-          </div>
-        </div>
-      </div>
 
-      <div class="super-accordion-item">
-        <div class="accordion-header" id="accordion-included-heading4">
-          <div
-            class="super-accordion-button collapsed"
-            data-bs-toggle="collapse"
-            data-bs-target="#accordion-included-collapse4"
-            aria-expanded="false"
-            aria-controls="accordion-included-collapse4"
-          >
-            <h4 class="w-full flex justify-between cursor-pointer text-super-blue-dark">
-              <span>Gastos funerarios</span><span class="pr-3 text-super-blue-light"> 15%</span>
-            </h4>
+        <div class="super-accordion-item">
+          <div class="accordion-header" id="accordion-included-heading4">
+            <div
+              class="super-accordion-button collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#accordion-included-collapse4"
+              aria-expanded="false"
+              aria-controls="accordion-included-collapse4"
+            >
+              <h4 class="w-full flex justify-between cursor-pointer text-super-blue-dark">
+                <span>Gastos funerarios</span><span class="pr-3 text-super-blue-light"> 15%</span>
+              </h4>
+            </div>
           </div>
-        </div>
-        <div
-          id="accordion-included-collapse4"
-          class="accordion-collapse collapse"
-          aria-labelledby="accordion-included-heading4"
-          data-bs-parent="#accordion-included"
-        >
-          <div class="accordion-body pt-2 text-super-grey-dark">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Alias aperiam consequuntur culpa doloremque eum fugit hic,
-            ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
+          <div
+            id="accordion-included-collapse4"
+            class="accordion-collapse collapse"
+            aria-labelledby="accordion-included-heading4"
+            data-bs-parent="#accordion-included"
+          >
+            <div class="accordion-body pt-2 text-super-grey-dark">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Alias aperiam consequuntur culpa doloremque eum fugit hic,
+              ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="container mx-auto mt-8">
-    <h3 class="w-full mb-2 text-center font-bold text-super-blue-darker">
-      <img src="assets/times-icon.svg" class="mx-auto mb-1" alt=""/>
-      ¿Qué no cubre este seguro?
-    </h3>
-    <div class="accordion accordion-flush" id="accordion-excluded">
-      <div
-        class="super-accordion-item">
-        <div class="accordion-header" id="accordion-excluded-heading1">
-          <div
-            class="super-accordion-button collapsed"
-            data-bs-toggle="collapse"
-            data-bs-target="#accordion-excluded-collapse1"
-            aria-expanded="false"
-            aria-controls="accordion-excluded-collapse1"
-          >
-            <h4 class="w-full cursor-pointer text-super-blue-dark">Enfermedades no declaradas</h4>
-          </div>
-        </div>
+    <section class="container mx-auto mt-8">
+      <h3 class="w-full mb-2 lg:mb-3 text-center text-super-blue-darker lg:text-lg font-bold">
+        <img src="assets/times-icon.svg" class="mx-auto mb-1 lg:w-8 lg:h-8" alt=""/>
+        ¿Qué no cubre este seguro?
+      </h3>
+      <div class="accordion accordion-flush" id="accordion-excluded">
         <div
-          id="accordion-excluded-collapse1"
-          class="accordion-collapse collapse"
-          aria-labelledby="accordion-excluded-heading1"
-          data-bs-parent="#accordion-excluded"
-        >
-          <div class="accordion-body pt-2 text-super-grey-dark">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Alias aperiam consequuntur culpa doloremque eum fugit hic,
-            ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
+          class="super-accordion-item">
+          <div class="accordion-header" id="accordion-excluded-heading1">
+            <div
+              class="super-accordion-button collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#accordion-excluded-collapse1"
+              aria-expanded="false"
+              aria-controls="accordion-excluded-collapse1"
+            >
+              <h4 class="w-full cursor-pointer text-super-blue-dark">Enfermedades no declaradas</h4>
+            </div>
+          </div>
+          <div
+            id="accordion-excluded-collapse1"
+            class="accordion-collapse collapse"
+            aria-labelledby="accordion-excluded-heading1"
+            data-bs-parent="#accordion-excluded"
+          >
+            <div class="accordion-body pt-2 text-super-grey-dark">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Alias aperiam consequuntur culpa doloremque eum fugit hic,
+              ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="super-accordion-item">
-        <div class="accordion-header" id="accordion-excluded-heading2">
+        <div class="super-accordion-item">
+          <div class="accordion-header" id="accordion-excluded-heading2">
+            <div
+              class="super-accordion-button collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#accordion-excluded-collapse2"
+              aria-expanded="false"
+              aria-controls="accordion-excluded-collapse2"
+            >
+              <h4 class="w-full cursor-pointer text-super-blue-dark">Suicido por 2 años</h4>
+            </div>
+          </div>
           <div
-            class="super-accordion-button collapsed"
-            data-bs-toggle="collapse"
-            data-bs-target="#accordion-excluded-collapse2"
-            aria-expanded="false"
-            aria-controls="accordion-excluded-collapse2"
+            id="accordion-excluded-collapse2"
+            class="accordion-collapse collapse"
+            aria-labelledby="accordion-excluded-heading2"
+            data-bs-parent="#accordion-excluded"
           >
-            <h4 class="w-full cursor-pointer text-super-blue-dark">Suicido por 2 años</h4>
+            <div class="accordion-body pt-2 text-super-grey-dark">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Alias aperiam consequuntur culpa doloremque eum fugit hic,
+              ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
+            </div>
           </div>
         </div>
-        <div
-          id="accordion-excluded-collapse2"
-          class="accordion-collapse collapse"
-          aria-labelledby="accordion-excluded-heading2"
-          data-bs-parent="#accordion-excluded"
-        >
-          <div class="accordion-body pt-2 text-super-grey-dark">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Alias aperiam consequuntur culpa doloremque eum fugit hic,
-            ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
-          </div>
-        </div>
-      </div>
 
-      <div class="super-accordion-item">
-        <div class="accordion-header" id="accordion-excluded-heading3">
-          <div
-            class="super-accordion-button collapsed"
-            data-bs-toggle="collapse"
-            data-bs-target="#accordion-excluded-collapse3"
-            aria-expanded="false"
-            aria-controls="accordion-excluded-collapse3"
-          >
-            <h4 class="w-full cursor-pointer text-super-blue-dark">Falsedades en la aplicación</h4>
+        <div class="super-accordion-item">
+          <div class="accordion-header" id="accordion-excluded-heading3">
+            <div
+              class="super-accordion-button collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#accordion-excluded-collapse3"
+              aria-expanded="false"
+              aria-controls="accordion-excluded-collapse3"
+            >
+              <h4 class="w-full cursor-pointer text-super-blue-dark">Falsedades en la aplicación</h4>
+            </div>
           </div>
-        </div>
-        <div
-          id="accordion-excluded-collapse3"
-          class="accordion-collapse collapse"
-          aria-labelledby="accordion-excluded-heading3"
-          data-bs-parent="#accordion-excluded"
-        >
-          <div class="accordion-body pt-2 text-super-grey-dark">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Alias aperiam consequuntur culpa doloremque eum fugit hic,
-            ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
+          <div
+            id="accordion-excluded-collapse3"
+            class="accordion-collapse collapse"
+            aria-labelledby="accordion-excluded-heading3"
+            data-bs-parent="#accordion-excluded"
+          >
+            <div class="accordion-body pt-2 text-super-grey-dark">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Alias aperiam consequuntur culpa doloremque eum fugit hic,
+              ipsa iusto laborum nostrum praesentium totam. Consequuntur, laudantium.
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </main>
 
 <script type="module" src="js/main.js"></script>
